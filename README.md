@@ -1,2 +1,2 @@
 # Pims-ETL
-Extration, transformation and load
+Extract, transformation and load
