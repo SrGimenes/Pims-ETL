@@ -4,8 +4,8 @@ $inAFDatabase = $env:inAFDatabase
 $inAFTemplate = $env:inAFTemplate                      
 $inAFElement = $env:inAFElemente                       
 $User = $env:User
-$Pword = ConvertTo-SecureString -String "$env:Pword" -AsPlainText -Force                                       # Password
-$Credential= New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $User, $PWord         # Credenciais para a Maquina do PIMS
+$Pword = ConvertTo-SecureString -String "$env:Pword" -AsPlainText -Force                                       
+$Credential= New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $User, $PWord         
 $DadosPims = $null 
 
 Connect-PIDataArchive -PIDataArchiveMachineName $inAFServer 
